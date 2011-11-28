@@ -19,7 +19,7 @@ set cpo&vim
 " Find the text object's limits.
 function! s:get_object(...)
   let cur = getpos('.')
-  let last = [0] + searchpos(@/, 'ecW') + [0]
+  let last = [0] + searchpos(@/, 'ecw') + [0]
   let first = [0] + searchpos(@/, 'bcnW') + [0]
   if first != [0,0,0,0] && last != [0,0,0,0]
     call setpos("'[", (a:0 ? cur : first))
