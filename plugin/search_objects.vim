@@ -1,5 +1,5 @@
 " Vim global plugin file
-" Description:	search_objects provides some nice feature.
+" Description:	allows you to treat search results as text objects.
 " Maintainer:	Israel Chauca F. <israelchauca@gmail.com>
 " Version:	0.1
 " Last Change:	Sun Nov 27 17:41:59 2011
