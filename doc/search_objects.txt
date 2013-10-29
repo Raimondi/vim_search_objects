@@ -1,0 +1,40 @@
+*search_objects.txt* Plugin for treating search results as text objects
+
+Author: Israel Chauca F. <israelchauca@gmail.com>   *search-objects-author* 
+License: Same terms as Vim itself (see |license|)
+
+INTRODUCTION                                        *search-objects*
+
+This plugin turns the results of a search (conducted using |search-commands|)
+into a text object which can be manipulated using |motion| commands like |c|
+and |d|.
+
+MAPPINGS                                            *search-objects-mappings*
+
+{a/} is a text object representing the complete match.
+
+{i/} is a text object representing the text from the current cursor position to 
+the end of the match.
+
+EXAMPLES                                            *search-objects-examples*
+
+Imagine you have the following text:
+
+    The quick brown fox jumps over the lazy dog.
+
+To change the word brown to green, you can type this:
+
+{/brow} to search for the string "brow"
+
+{n} to advance to the first result.
+
+{ca/} to change the match.
+
+{gree}<Escape> to type the new text.
+
+The benefit of using search objects over word objects becomes apparent when
+you have camel-case classnames like "DatabaseQueryResult". If you wished to
+quickly change the substring "Query", the above process would let you do so
+without affecting the parts that do not match the search result.
+
+vim:tw=78:ts=8:ft=help:norl:
