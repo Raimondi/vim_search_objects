@@ -1,0 +1,3 @@
+A Vim plugin that lets you treat search results as text objects.
+
+See doc/search_objects.txt for more details.
